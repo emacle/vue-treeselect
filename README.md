@@ -1,3 +1,8 @@
+# clone @riophae/vue-treeselect
+ 解决大数据集时，首字母为空格或者中文输入法搜索时卡顿现象
+
+https://github.com/riophae/vue-treeselect/issues/369
+
 # vue-treeselect
 [![npm](https://badgen.now.sh/npm/v/@riophae/vue-treeselect)](https://www.npmjs.com/package/@riophae/vue-treeselect) [![Build](https://badgen.now.sh/circleci/github/riophae/vue-treeselect)](https://circleci.com/gh/riophae/vue-treeselect/tree/master) [![Coverage](https://badgen.net/codecov/c/github/riophae/vue-treeselect)](https://codecov.io/gh/riophae/vue-treeselect?branch=master)
 ![npm monthly downloads](https://badgen.now.sh/npm/dm/@riophae/vue-treeselect)
@@ -25,7 +30,7 @@
 It's recommended to install vue-treeselect via npm, and build your app using a bundler like [webpack](https://webpack.js.org/).
 
 ```bash
-npm install --save @riophae/vue-treeselect
+npm install --save @emacle/vue-treeselect
 ```
 
 This example shows how to integrate vue-treeselect with your [Vue SFCs](https://vuejs.org/v2/guide/single-file-components.html).
@@ -40,9 +45,9 @@ This example shows how to integrate vue-treeselect with your [Vue SFCs](https://
 
 <script>
   // import the component
-  import Treeselect from '@riophae/vue-treeselect'
+  import Treeselect from '@emacle/vue-treeselect'
   // import the styles
-  import '@riophae/vue-treeselect/dist/vue-treeselect.css'
+  import '@emacle/vue-treeselect/dist/vue-treeselect.css'
 
   export default {
     // register the component

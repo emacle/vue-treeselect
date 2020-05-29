@@ -101,6 +101,8 @@
 
       onInput(evt) {
         const { value } = evt.target
+        // 检测输入字符为空时返回，大数据集时防止卡顿
+        if(!value.trim()) return
 
         this.value = value
 
