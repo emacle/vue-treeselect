@@ -1,7 +1,22 @@
 # clone @riophae/vue-treeselect
- 解决大数据集时，首字母为空格或者中文输入法搜索时卡顿现象
+1. 解决大数据集时，首字母为空格或者中文输入法搜索时卡顿现象
 
-https://github.com/riophae/vue-treeselect/issues/369
+   https://github.com/riophae/vue-treeselect/issues/369
+
+2. 展开已选择项的所有父节点，并且居中显示，方便修改操作；搜索模式下展开已选项
+
+   @varlamov88 [Expand parent nodes of selected item. Scroll menu to selected item](https://github.com/riophae/vue-treeselect/pull/310)
+
+   使用选项： scrollPositionOnCenter = true
+   
+```
+   <treeselect
+            v-model="orgCode"
+            :clearable="true"
+            :scrollPositionOnCenter="true"
+            :default-expand-level="0"
+          />
+```
 
 # vue-treeselect
 [![npm](https://badgen.now.sh/npm/v/@riophae/vue-treeselect)](https://www.npmjs.com/package/@riophae/vue-treeselect) [![Build](https://badgen.now.sh/circleci/github/riophae/vue-treeselect)](https://circleci.com/gh/riophae/vue-treeselect/tree/master) [![Coverage](https://badgen.net/codecov/c/github/riophae/vue-treeselect)](https://codecov.io/gh/riophae/vue-treeselect?branch=master)
